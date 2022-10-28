@@ -1,18 +1,4 @@
-"use strict";
-//classes
-class Invoice {
-    // readonly  client:string
-    //    private details:string
-    //    public amount:number
-    constructor(client, details, amount) {
-        this.client = client;
-        this.details = details;
-        this.amount = amount;
-    }
-    format() {
-        return `${this.client} owes ${this.amount} for ${this.details} `;
-    }
-}
+import { Invoice } from './models/invoice.js';
 const invOne = new Invoice('mario', 'work on the mario website', 200);
 const invTwo = new Invoice('luigi', 'work on the luigui website', 500);
 console.log(invOne, invTwo);
