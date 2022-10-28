@@ -1,3 +1,36 @@
+//interfaces
+interface IsPerson{
+    name:string;
+    age:number;
+    speak(a:string):void;
+    spend(a:number):number
+}
+
+
+const me:IsPerson={
+    name:'mukthar',
+    age:21,
+    speak(text:string):void{
+        console.log(text);
+        
+    },
+    spend(amount:number):number{
+        return amount;
+    }
+
+}
+
+let greetPerson=(person:IsPerson)=>{
+    console.log('jello',person.name);
+    
+};
+
+greetPerson(me)
+
+console.log(me);
+
+
+
 import {Invoice} from './models/invoice.js'
 const invOne=new Invoice('mario','work on the mario website',200)
 
