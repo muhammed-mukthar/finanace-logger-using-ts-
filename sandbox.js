@@ -1,27 +1,28 @@
-//arrays
-var names = ['mukthar', 'mario', 'yoshi'];
-// names.push(343)
-// names[3]=33
-var numbers = [10, 20, 30, 40];
-numbers.push(25);
-// numbers.push('shaun')
-// numbers[3]='33'
-var mixed = ['len', 3, 'cji', 8, 9, true];
-mixed.push('fsfs');
-mixed.push(10);
-mixed[0] = 3;
-//objects 
-var ninja = {
-    name: 'mario',
-    belt: 'black',
-    age: 30
-};
-ninja.age = 40;
-ninja.name = 'ryu';
-// ninja.age='30'
-// ninja.skills=['fighting','sneaking']
-ninja = {
-    name: 'yposhi',
-    belt: 'fsfsd',
-    age: 3
+/* ---------------------------- //explicit types ---------------------------- */
+var character;
+var age;
+var isLoggedIn;
+// isLoggedIn=25
+isLoggedIn = false;
+/* -------------------------------- //arrays -------------------------------- */
+var ninjas = [];
+ninjas.push('mukthar');
+ninjas = ['10', '23'];
+/* ------------------------------ //union types ----------------------------- */
+var mixed = [];
+mixed.push('hallo');
+// mixed.push(22)
+mixed.push(false);
+console.log(mixed);
+var uid;
+uid = 123;
+uid = 'fs';
+// uid=false
+/* -------------------------------- //objects ------------------------------- */
+var ninjaOne;
+ninjaOne = { name: 'mukthar', age: 30 };
+var ninjaTwo;
+ninjaTwo = { name: 'mario',
+    age: 32,
+    beltColour: 'fsfs'
 };

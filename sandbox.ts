@@ -1,46 +1,43 @@
-//arrays
+/* ---------------------------- //explicit types ---------------------------- */
 
-let names=['mukthar','mario','yoshi']
+let character:string
+let age:number
+let isLoggedIn:boolean;
 
-// names.push(343)
-
-// names[3]=33
-
-
-let numbers=[10,20,30,40]
+// isLoggedIn=25
+isLoggedIn=false
 
 
+/* -------------------------------- //arrays -------------------------------- */
 
-numbers.push(25)
+let ninjas:string[] =[];
+ninjas.push('mukthar')
+ninjas=['10','23']
+/* ------------------------------ //union types ----------------------------- */
 
-// numbers.push('shaun')
+let mixed:(string|boolean)[]=[]
+mixed.push('hallo')
+// mixed.push(22)
+mixed.push(false)
+console.log(mixed);
 
-// numbers[3]='33'
+let uid: string|number;
+uid=123
+uid='fs'
+// uid=false
 
-let mixed=['len',3,'cji',8,9,true]
+/* -------------------------------- //objects ------------------------------- */
 
-mixed.push('fsfs')
-mixed.push(10);
-mixed[0]=3;
+let ninjaOne:object
+ninjaOne={name:'mukthar',age:30}
 
-//objects 
-
-
-let ninja={
-  name:'mario',
-  belt:'black',
-  age:30
+let ninjaTwo:{
+  name:string,
+  age:number,
+  beltColour:string
 }
 
-ninja.age=40;
-
-ninja.name='ryu'
-// ninja.age='30'
-
-// ninja.skills=['fighting','sneaking']
-
-ninja={
-  name:'yposhi',
-  belt:'fsfsd',
-  age:3
+ninjaTwo={ name:'mario',
+  age:32,
+  beltColour:'fsfs',
 }
