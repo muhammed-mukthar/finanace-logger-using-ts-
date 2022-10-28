@@ -1,43 +1,23 @@
-/* ---------------------------- //explicit types ---------------------------- */
+let age:any=25
 
-let character:string
-let age:number
-let isLoggedIn:boolean;
+age='sfsfd'
+age=true
 
-// isLoggedIn=25
-isLoggedIn=false
+age='hello';
+console.log(age);
+age={name:'lauigi'};
+console.log(age);
 
 
-/* -------------------------------- //arrays -------------------------------- */
+let mixed:any[]=[];
 
-let ninjas:string[] =[];
-ninjas.push('mukthar')
-ninjas=['10','23']
-/* ------------------------------ //union types ----------------------------- */
-
-let mixed:(string|boolean)[]=[]
-mixed.push('hallo')
-// mixed.push(22)
+mixed.push(5)
+mixed.push('mario')
 mixed.push(false)
 console.log(mixed);
+let ninja:{name:any,age:any}
+ninja={name:"age",age:23}
+console.log(ninja);
+ninja={name:"fsfs",age:'fdsfsd'}
+console.log(ninja);
 
-let uid: string|number;
-uid=123
-uid='fs'
-// uid=false
-
-/* -------------------------------- //objects ------------------------------- */
-
-let ninjaOne:object
-ninjaOne={name:'mukthar',age:30}
-
-let ninjaTwo:{
-  name:string,
-  age:number,
-  beltColour:string
-}
-
-ninjaTwo={ name:'mario',
-  age:32,
-  beltColour:'fsfs',
-}

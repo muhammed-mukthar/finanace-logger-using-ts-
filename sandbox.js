@@ -1,28 +1,17 @@
-/* ---------------------------- //explicit types ---------------------------- */
-var character;
-var age;
-var isLoggedIn;
-// isLoggedIn=25
-isLoggedIn = false;
-/* -------------------------------- //arrays -------------------------------- */
-var ninjas = [];
-ninjas.push('mukthar');
-ninjas = ['10', '23'];
-/* ------------------------------ //union types ----------------------------- */
+var age = 25;
+age = 'sfsfd';
+age = true;
+age = 'hello';
+console.log(age);
+age = { name: 'lauigi' };
+console.log(age);
 var mixed = [];
-mixed.push('hallo');
-// mixed.push(22)
+mixed.push(5);
+mixed.push('mario');
 mixed.push(false);
 console.log(mixed);
-var uid;
-uid = 123;
-uid = 'fs';
-// uid=false
-/* -------------------------------- //objects ------------------------------- */
-var ninjaOne;
-ninjaOne = { name: 'mukthar', age: 30 };
-var ninjaTwo;
-ninjaTwo = { name: 'mario',
-    age: 32,
-    beltColour: 'fsfs'
-};
+var ninja;
+ninja = { name: "age", age: 23 };
+console.log(ninja);
+ninja = { name: "fsfs", age: 'fdsfsd' };
+console.log(ninja);
