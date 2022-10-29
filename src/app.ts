@@ -62,4 +62,33 @@ const addUID=<T extends {name:string}>(obj:T) => {
     // console.log(docThree,docFour);
     
 
-        
+    /* ---------------------------------- Enums --------------------------------- */
+
+    // enum ResourceType {Book,Author,Film,Director,Person}
+
+    // interface Resource<T> {
+    //     uid:number;
+    //     resourceType:ResourceType;
+    //     data:T,
+    //     }
+    
+    //     const doc11:Resource<object>={
+    //         uid:1,
+    //         resourceType:ResourceType.Author,
+    //         data:{title:'mukthar is here'}
+    //     }
+    
+    //     const doc12:Resource<object>={
+    //         uid:1,
+    //         resourceType:ResourceType.Book,
+    //         data:{title:'mukthar is here'}
+    //     }
+    //     const doc13:Resource<object>={
+    //         uid:10,
+    //         resourceType:ResourceType.Film,
+    //         data:{name:'yoshi'}
+    //     }
+    
+    // console.log(doc11,doc12);
+    
+    
