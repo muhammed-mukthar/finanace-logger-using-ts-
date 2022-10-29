@@ -21,3 +21,27 @@ form.addEventListener('submit', (e) => {
     }
     list.render(doc, type.value, 'end');
 });
+/* ------------------------------- //generics ------------------------------- */
+const addUID = (obj) => {
+    let uid = Math.floor(Math.random() * 100);
+    return Object.assign(Object.assign({}, obj), { uid });
+};
+let docOne = addUID({ name: 'yoshi', age: 40 });
+console.log(docOne.age);
+// with interfaces
+// interface Resource<T> {
+// uid:number;
+// resourcesName:string;
+// data:T,
+// }
+// const docThree:Resource<object>={
+//     uid:1,
+//     resourcesName:'person',
+//     data:{name:'mukthar'}
+// }
+// const docFour: Resource<string[]>={
+//     uid:2,
+//     resourcesName:'shoppinList',
+//     data:['test']
+// }
+// console.log(docThree,docFour);
